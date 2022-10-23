@@ -1,12 +1,12 @@
 #include"main.h"
 
 /**
- *  main - Entry point
+ * main - Entry point
  *
- *  Description: prints the first 50 Fibonacci numbers
- *  starting with 1 and 2 folled by a new line
+ * Description: prints the first 50 Fibonacci numbers
+ * starting with 1 and 2 folled by a new line
  *
- *  Return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
@@ -25,8 +25,8 @@ int main(void)
 		if (count == 49)
 			printf("\n");
 		else
-			print(", ");
+			printf(", ");
 	}
-
-	return (0);
+	
+	return (0)
 }
