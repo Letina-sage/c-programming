@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_triangle - prints a triangle
+ * print_triangle - prints a triangle in the monitor th laptop
  * @n: size of the triangle
  */
-void printf_triangle(int n)
+void print_triangle(int n)
 {
 	int h, tri;
 
