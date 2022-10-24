@@ -12,23 +12,21 @@ int largest_number(int a, int b, int c)
 {
 	int largest;
 
-	if (a > b && a > c)
-	{
-		largest = a;
-	}
-	else if (b > c && b > a)
-	{
-		largest = b;
-	}
-	else if (c > b)
-	{
-		largest = c;
-	}
-	else
-	{
-		largest = b;
-	}
-
-
+	largest = bigger_number(a, bigger_number(b, c));
 	return (largest);
+}
+
+/**
+ * bigger_number - bigger number of two
+ * @a: first integer
+ * @b: second integer
+ * Return: Bigger number
+ */
+int bigger_number(int a, int b)
+{
+
+	if (a > b)
+		return (a);
+	else
+		return (b);
 }
