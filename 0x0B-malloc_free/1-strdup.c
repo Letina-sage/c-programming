@@ -2,6 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ *str_up - print string
+ * retuon: nothing
+ */
+
 char *_strdup(char *str)
 {
 	int i = 0, j, k = 0;
