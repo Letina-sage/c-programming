@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
-
 /**
  * _strdup - returns a pointer to dup string, new allocated memory
  * @str: string to copy
+ *
  * Return: pointer to new string or NULL
  */
 char *_strdup(char *str)
@@ -24,4 +24,11 @@ char *_strdup(char *str)
 	if (a == NULL)
 		return (NULL);
 	i = 0;
+	while (i < len)
+	{
+		*(a + i) = *(str + i);
+		i++;
+	}
+	*(a + len) = '\0';
+	return (a);
 }
