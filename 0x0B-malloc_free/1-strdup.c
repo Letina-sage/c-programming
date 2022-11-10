@@ -24,12 +24,4 @@ char *_strdup(char *str)
 	if (a == NULL)
 		return (NULL);
 	i = 0;
-	while (i < len)
-	{
-		*(a + i) = *(str + i);
-		i++;
-	}
-	*(a + len) = '\0';
-	return (a);
 }
-	
